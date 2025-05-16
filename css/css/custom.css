@@ -21,11 +21,61 @@
 body .booksy-widget-container-default .booksy-widget-button {
   background-size: contain !important;
 }
+.truncated {
+    position: relative;
+    overflow: hidden;
+}
 
+.see-more-btn {
+    background-color: unset;
+    color: #D63447;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.see-more-btn:hover,
+.see-more-btn:focus{
+    background-color: unset;
+    text-decoration: underline;
+    outline: none;
+}
 .text p:not(:last-child) {
   margin-bottom: 10px;
 }
-
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+.social ul li {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.social img {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 479.98px) {
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+}
 .title {
   font-size: 40px;
   font-weight: 500;

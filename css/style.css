@@ -59,7 +59,7 @@ a, a:hover {
 }
 
 .unslate_co--site-inner {
-  margin-bottom: 400px;
+  margin-bottom: 203px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -80,7 +80,6 @@ a, a:hover {
   right: 0;
   bottom: 0px;
   z-index: -1;
-  height: 400px;
 }
 
 @media (max-width: 991.98px) {
@@ -1302,7 +1301,17 @@ figure.dotted-bg:before {
     padding-left: 15px !important;
   }
 }
-
+@media (max-width: 468px) {
+  .gutter-isotope-item>.col,
+  .gutter-isotope-item>[class*="col-"] {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .gutter-isotope-item {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+}
 .isotope-mb-2 {
   margin-bottom: 30px !important;
 }
@@ -1751,7 +1760,7 @@ figure.dotted-bg:before {
 }
 
 .unslate_co--footer .footer-site-logo {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .unslate_co--footer .footer-site-logo a {
